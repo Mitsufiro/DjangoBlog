@@ -1,0 +1,137 @@
+﻿{% extends "app/layout.html" %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+    <ol class="carousel-indicators">
+
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+
+            <img src="{% static 'app/content/banner1.jpg'%} " width=100% height=100% alt="Первый слайд" class="img-responsive"/>
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Space station
+
+                    <a class="btn btn-default" href="https://www.nasa.gov/feature/ames/capstone-charts-a-new-path-for-nasas-moon-orbiting-space-station">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src="{% static 'app/content/banner2.jpg'%}" width=100% height=100% alt="Второй слайд" class="img-responsive"/>
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Просторы космоса
+
+                    <a class="btn btn-default" href="https://www.nasa.gov/multimedia/imagegallery/iotd.html">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src=" {% static 'app/content/banner3.jpg'%} " width=100% height=100% alt="Третий слайд" class="img-responsive"/>
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Black Hole
+
+                    <a class="btn btn-default" href="https://www.nasa.gov/mission_pages/chandra/news/new-nasa-black-hole-sonifications-with-a-remix.html9">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        <span class="sr-only">Previous</span>
+
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+        <span class="sr-only">Next</span>
+
+    </a>
+
+</div>
+
+
+<div class="jumbotron">
+    <h1>Space</h1>
+    <p class="lead">Space is the boundless three-dimensional extent in which objects and events have relative position and direction.
+            In classical physics, physical space is often conceived in three linear dimensions, although modern physicists usually consider it,
+            with time, to be part of a boundless four-dimensional continuum known as spacetime. The concept of space is considered to be of fundamental importance
+            to an understanding of the physical universe. However, disagreement continues between philosophers over whether it is itself an entity,
+            a relationship between entities, or part of a conceptual framework.</p>
+    <p><a href="https://en.wikipedia.org/wiki/Space" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Interesting!</h2>
+        <p>
+            Sagittarius A*: NASA Telescopes Support Event Horizon Telescope in Studying Milky Way's Black Hole
+        </p>
+        <p><a class="btn btn-default" href="https://www.nasa.gov/mission_pages/chandra/images/sagittarius-a-nasa-telescopes-support-event-horizon-telescope-in-studying-milky-ways.html">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Amazing!</h2>
+        <p>NASA and Crayola Education Collaborate to Fuse STEM, Space, and Art</p>
+        <p><a class="btn btn-default" href="https://www.nasa.gov/feature/nasa-and-crayola-education-collaborate-to-fuse-stem-space-and-art">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Look at this!</h2>
+        <p>Hubble Captures Giant Elliptical in the Head of the Serpent</p>
+        <p><a class="btn btn-default" href="https://www.nasa.gov/image-feature/goddard/2002/hubble-captures-giant-elliptical-in-the-head-of-the-serpent">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
